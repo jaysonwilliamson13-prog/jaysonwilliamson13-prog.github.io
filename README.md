@@ -1,4 +1,4 @@
-# StudySpark Pro
+# Student Revision Helper
 
 Features:
 - AI study helper
