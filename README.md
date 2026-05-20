@@ -1,24 +1,26 @@
-# StudySpark
+# StudySpark Pro
 
-A free student tools website with:
-
-- Grade calculator
+Features:
+- AI study helper
+- Flashcards
+- GCSE calculator
 - Revision timer
-- Exam countdown
+- Demo user accounts
+- Dark mode
+- Mobile responsive design
+- AdSense-ready layout
 
-## How to publish free
+## Free Hosting
 
-### Option 1: GitHub Pages
+### Vercel
+https://vercel.com
 
-1. Create a GitHub account
-2. Upload these files to a repository
-3. Go to Settings > Pages
-4. Enable GitHub Pages
+### GitHub Pages
+https://pages.github.com
 
-### Option 2: Vercel
-
-1. Go to vercel.com
-2. Import the project from GitHub
-3. Click Deploy
-
-You now have a live website for free.
+## Future Upgrades
+- Real AI API integration
+- Full login system
+- Mobile app with React Native
+- Real database
+- Community revision sharing
