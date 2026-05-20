@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudySpark</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>StudySpark</h1>
+    <p>Free student tools to help you study smarter.</p>
+  </header>
+
+  <main>
+    <section class="tool">
+      <h2>Grade Calculator</h2>
+      <input type="number" id="grade1" placeholder="First grade">
+      <input type="number" id="grade2" placeholder="Second grade">
+      <input type="number" id="grade3" placeholder="Third grade">
+      <button onclick="calculateAverage()">Calculate Average</button>
+      <p id="averageResult"></p>
+    </section>
+
+    <section class="tool">
+      <h2>Revision Timer</h2>
+      <input type="number" id="minutes" placeholder="Minutes">
+      <button onclick="startTimer()">Start Timer</button>
+      <p id="timerDisplay">00:00</p>
+    </section>
+
+    <section class="tool">
+      <h2>Exam Countdown</h2>
+      <input type="date" id="examDate">
+      <button onclick="countdown()">Calculate Days Left</button>
+      <p id="countdownResult"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ for students.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
