@@ -3,22 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StudySpark</title>
+  <title>StudySpark Pro</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>StudySpark</h1>
-    <p>Free student tools to help you study smarter.</p>
+    <h1>StudySpark Pro</h1>
+    <p>AI-powered student tools for smarter studying.</p>
+
+    <button id="darkModeBtn">Toggle Dark Mode</button>
   </header>
 
   <main>
+
     <section class="tool">
-      <h2>Grade Calculator</h2>
-      <input type="number" id="grade1" placeholder="First grade">
-      <input type="number" id="grade2" placeholder="Second grade">
-      <input type="number" id="grade3" placeholder="Third grade">
-      <button onclick="calculateAverage()">Calculate Average</button>
+      <h2>AI Study Helper</h2>
+      <textarea id="studyQuestion" placeholder="Ask a study question..."></textarea>
+      <button onclick="studyHelper()">Get Help</button>
+      <p id="studyAnswer"></p>
+    </section>
+
+    <section class="tool">
+      <h2>Flashcards</h2>
+      <input type="text" id="flashQuestion" placeholder="Question">
+      <input type="text" id="flashAnswer" placeholder="Answer">
+      <button onclick="addFlashcard()">Add Flashcard</button>
+
+      <div id="flashcards"></div>
+    </section>
+
+    <section class="tool">
+      <h2>GCSE Grade Calculator</h2>
+      <input type="number" id="grade1" placeholder="Subject 1">
+      <input type="number" id="grade2" placeholder="Subject 2">
+      <input type="number" id="grade3" placeholder="Subject 3">
+      <button onclick="calculateAverage()">Calculate GCSE Average</button>
       <p id="averageResult"></p>
     </section>
 
@@ -30,15 +49,28 @@
     </section>
 
     <section class="tool">
-      <h2>Exam Countdown</h2>
-      <input type="date" id="examDate">
-      <button onclick="countdown()">Calculate Days Left</button>
-      <p id="countdownResult"></p>
+      <h2>User Accounts (Demo)</h2>
+      <input type="text" id="username" placeholder="Username">
+      <button onclick="saveUser()">Save User</button>
+      <p id="userResult"></p>
     </section>
+
+    <section class="tool">
+      <h2>Future Income Area</h2>
+      <div class="ad-box">
+        Your Google AdSense ads can go here later.
+      </div>
+    </section>
+
+    <section class="tool">
+      <h2>Mobile App Ready</h2>
+      <p>This website is responsive and can later be turned into an app using React Native or Flutter.</p>
+    </section>
+
   </main>
 
   <footer>
-    <p>Made with ❤️ for students.</p>
+    <p>StudySpark Pro © 2026</p>
   </footer>
 
   <script src="script.js"></script>
